@@ -113,7 +113,8 @@
 /* webD */
 #modal11 div.appD img, #modal12 div.maxim img, #modal13 div.seoulD img, #modal14 div.lipstick img, #modal15 div.petCafe img{width: 100%;}
 
-.open_btn{color: #fff;width: 100%;cursor: pointer;background: #867107;}
+.open_btn{color: #fff;width: 100%;cursor: pointer;background: #867107;transition: all 1s;}
+.open_btn:hover, .open_btn:focus{background: #ffffff;color: #867107;}
 .webD .open_btn{color: #f3dbb3;width: unset;background: none;}
 
 /* VisualDesign - bg */

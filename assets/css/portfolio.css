@@ -73,9 +73,9 @@ aside{outline: 0;border: 0;font-weight: inherit;font-family: inherit;vertical-al
 body{font-family: playB, Martina, amaR, "나무고딕", "NamuG";font-size: 18px;color: #ffffff;line-height: 18px;min-width: 1680px;}
 
 #header{position: fixed;top: 0;left: 0;width: 100%;height: 80px;z-index: 500;}
-.logo{top: 40px;left: 50px;}
+.logo{top: 5px;left: 5px;}
 .logo, .logo img{position: absolute;}
-.logo img{width: 100px;}
+.logo img{width: 85px;}
 
 .btn_menu{position: absolute;top: 34px;right: 34px;width: 40px;height: 40px;z-index: 1000;border-radius: 50%;border: 1px double #e46486;}
 .btn_menu:before{content: "";position: absolute;top: -5px;left: -5px;width: 48px;height: 48px;border: 1px solid #e46486;border-radius: 50%;}
@@ -464,7 +464,8 @@ body.overHidden{overflow: hidden;}
 #dim{display: none;top: 0;right: 0;left: 0;bottom: 0;background: rgba(0, 0, 0, .6);}
 .modal_cnt{visibility:hidden;width: 90%;height: 90%;overflow: auto;background: #ffffff;}
 .modal_sub{z-index: 500;}
-.modal_cnt .close_btn{position: fixed;top: 8%;left: 88%;padding: 10px 20px;background: #312205;color: #F2D750;}
+.modal_cnt .close_btn{font-family: amaR;font-size: 16px;font-weight: 400;position: fixed;top: 8%;left: 88%;padding: 10px 20px;background: #312205;color: #F2D750;transition: all 0.7s;}
+.modal_cnt .close_btn:hover, .modal_cnt .close_btn:focus{background: #f2d750;color: #312205;}
 
 #modal21, #modal22{position: absolute;z-index: 100;width: 65%;height: 65%;}
 #modal21 > .close_btn, #modal22 > .close_btn{top: 20%;left: 78%;}
