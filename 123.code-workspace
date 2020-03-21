@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "C:\\Users\\hi\\Dropbox\\web"
+		},
+		{
+			"path": "C:\\Users\\hi\\Dropbox\\upload"
+		},
+		{
+			"path": "C:\\Users\\hi\\NaverCloud\\2차 프로젝트\\코딩\\html"
+		},
+		{
+			"path": "C:\\Users\\hi\\NaverCloud\\BENZ"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "html"
+	}
+}

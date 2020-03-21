@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Acceessibility : PORTFOLIO </title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="shortcut icon" href="assets/images/total/logo.png">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/common.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="logo f_r">
+            <a href="index.html">
+                <img src="assets/images/total/logo.png" alt="PORTFOLIO">
+            </a>
+        </h1>
+        <button class="btn_menu">
+            <span class="sr-only">메뉴 열기</span>
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line btm"></span>
+            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 6 24" style="enable-background:new 0 0 6 24;" xml:space="preserve">
+            <g>
+                <g>
+                    <rect class="st0" width="6" height="24"/>
+                </g>
+                <g>
+                    <circle class="dote" cx="3" cy="3" r="3"/>
+                </g>
+            </g>
+            </svg>        
+        </button>
+        <nav id="gnb">
+            <h2 class="sr-only">주메뉴</h2>
+            <ul class="sign">
+                <li>
+                    <a href="index.html" data-link="first">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="design.html">Design</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+                <li>
+                    <a href="acceess.html" data-link="last">Accessibility</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section id="access">
+        <div id="accMenu">
+            <div class="accCenter">
+                <h2 class="shimmer">Accessibility</h2>
+                <div class="access_bg"></div>
+                <div class="titlebox">
+                    <h3>모두가 동등한 자격을 누리는 웹 세상</h3>
+                    <p class="desk">웹의 힘은 그것의 보편성에 있다. 장애에 구애없이 모든 사람이 접근할 수 있는 것이 필수적인 요소이다. <br>(The power of the Web is in its universality, Access by everyone regardless of disability is an essential aspect.)</p>
+                    <span class="desk">팀 버너스 리 경 - 웹의 창시자 <br>(Tim Berners - Lee , W3C Director and inventor of the World Wide Web)</span>
+                    <div class="click_center">
+                        <a href="#accBenz" class="site_go">접근성 사례보기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="accBenz" class="acccnt p_a">
+            <div class="acc_ex">
+                <div class="accpic p_r">
+                    <ul class="pic_btn">
+                        <li class="on">
+                            <button>1
+                                <span class="blind">인식의용이성사례</span>
+                            </button>
+                        </li>
+                        <li class="">
+                            <button>2
+                                <span class="blind">운용의용이성사례</span>
+                            </button>
+                        </li>
+                        <li class="">
+                            <button>3
+                                <span class="blind">이해의용이성사례</span>
+                            </button>
+                        </li>
+                        <li class="">
+                            <button>4
+                                <span class="blind">견고성사례</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="pic_cnt">
+                        <ul class="pic">
+                            <li class="pic1 piccnt on">
+                                <h4 class="blind">인식의용이성사례 예시사진</h3>
+                                <div class="exbg"></div>
+                                <div class="expic">해당이미지에 대한 간단한 소개</div>
+                            </li>
+                            <li class="pic2 piccnt">
+                                <h4 class="blind">운용의용이성사례 예시사진</h3>
+                                <div class="exbg"></div>
+                                <div class="expic">TAB키를 누르면 나오는 스킵네비게이션 확대사진</div>
+                            </li>
+                            <li class="pic3 piccnt">
+                                <h4 class="blind">이해의용이성사례 예시사진</h3>
+                                <div class="exbg"></div>
+                                <div class="expic">팝업창을 사용하지 않고 초기화면으로만 정보전달 가능</div>
+                            </li>
+                            <li class="pic4 piccnt">
+                                <h4 class="blind">견고성사례 예시사진</h4>
+                                <div class="exbg"></div>
+                                <div class="expic">W3C markup 검사 pass 글자 확대사진</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acc_txt p_r">
+                    <div class="txt p_r">
+                        <div class="txt1 txtcnt">
+                            <h4>인식의 용의성 (Perceivable)
+                                <span class="line"></span>
+                                <span class="num">01</span>
+                            </h4>
+                            <strong>1.1 적절한 대체 텍스트 제공  -  텍스트 아닌 콘텐츠에는 대체 텍스트를 제공해야 한다.</strong>
+                            <p class="acc_tit">◆ 해당소스</p>
+                            <img src="" alt="">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn"></p>
+                        </div>
+                        <div class="txt2 txtcnt">
+                            <h4>운용의 용의성 (Operable)
+                                <span class="line"></span>
+                                <span class="num">02</span>
+                            </h4>
+                            <strong>2.1 입력장치 접근성  -  2.1.1 키보드 사용 보장  :  모든 기능은 키보드만으로도 사용할 수 있어야 한다.</strong>
+                            <p class="acc_tit">◆ 해당이미지</p>
+                            <img src="" alt="">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn">:  키보드 초첨을 받았을 때도 동일하게 기능을 이용할 수 있도록 하였습니다. 마우스나 키보드 어떤 방식으로 접근하더라도 주 메뉴의 세부메뉴까지 확인하고 선택할 수 있습니다.</p>
+                            <strong>2.4  쉬운 내비게이션  -  2.4.1  반복 영역 건너뛰기  :  콘텐츠의 반복되는 영역은 건너뛸 수 있어야 한다.</strong>
+                            <p class="acc_tit">◆ 해당이미지</p>
+                            <img src="" alt="">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn">:  본문 바로가기를 제공함으로써 키보드로 웹 페이지를 탐색하는 사용자도 마우스 사용자와 같이 본문으로 바로 이동할 수 있어 콘텐츠를 운용하는데 원활하도록 하였습니다. 반복되는 콘텐츠 영역은 건너뛸 수 있도록 제공함으로써 운용의 용이성을 높였습니다.</p>
+                        </div>
+                        <div class="txt3 txtcnt">
+                            <h4>이해의 용의성 (Understandable)
+                                <span class="line"></span>
+                                <span class="num">03</span>
+                            </h4>
+                            <strong>3.2 예측 가능성  -  3.2.1 사용자 요구에 따른 실행  :  사용자가 의도하지 않은 기능은 실행되지 않아야 한다.</strong>
+                            <p class="acc_tit">◆ 해당이미지</p>
+                            <img src="" alt="">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn">팝업 창(레이어팝업 포함)을 쓰지 않고 웹 사이트 초기화면에서 중요한 내용을 사용자들이 잘 보거나 전달 받을 수 있도록 의도하지 않은 실행이 일어나지 않도록 만들었습니다.</p>
+                            <strong>3.3 콘텐츠의 논리성  -  3.2.1 콘텐츠의 선형 구조  :  콘텐츠는 논리적인 순서로 제공해야 한다.</strong>
+                            <p class="acc_tit">◆ 해당이미지</p>
+                            <img src="" alt="">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn">html에는 로고를 먼저 넣으므로서 논리적인 순서로 선형구조에 맞게 작성하였습니다.</p>
+                        </div>
+                        <div class="txt4 txtcnt">
+                            <h4>견고성 (Robust)
+                                <span class="line"></span>
+                                <span class="num">04</span>
+                            </h4>
+                            <strong>4.1 문법 준수  -  4.1.1 마크업 오류 방지  :  마크업 언어의 요소는 열고 닫음, 중첩 관계 및 속성 선언에 오류가 없어야 한다.</strong>
+                            <p class="acc_tit">◆ 해당이미지</p>
+                            <img src="" alt="마크업 사이트에서 통과를 받은 벤츠사이트">
+                            <p class="acc_tit">◆ 설명</p>
+                            <p class="marbtn">:  마크업 검사에서도 통과를 받아 견고성을 지켰습니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

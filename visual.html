@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Visual Design : PORTFOLIO </title>
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="shortcut icon" href="assets/images/total/logo.png">
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/visual.js"></script>
+    <script src="assets/js/common.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script>
+        function goBack() {
+          window.history.back();
+        }
+    </script>
+</head>
+<body id="visualPf"><!-- 스크립트로 세로 스크롤바를 생성해서 스크롤이 이동하는 만큼 margin-left로 애니메이트 시키는 컨셉, 스크롤바를 만들기 위해 아이디 추가하고 css 설정 - desgin.css 164라인 확인 -->
+    <header id="header">
+        <h1 class="logo f_r">
+            <a href="index.html">
+                <img src="assets/images/total/logo.png" alt="PORTFOLIO">
+            </a>
+        </h1>
+        <button class="btn_menu">
+            <span class="sr-only">메뉴 열기</span>
+            <span class="line top"></span>
+            <span class="line mid"></span>
+            <span class="line btm"></span>
+            <svg version="1.1" id="circle" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 6 24" style="enable-background:new 0 0 6 24;" xml:space="preserve">
+            <g>
+                <g>
+                    <rect class="st0" width="6" height="24"/>
+                </g>
+                <g>
+                    <circle class="dote" cx="3" cy="3" r="3"/>
+                </g>
+            </g>
+            </svg>        
+        </button>
+        <nav id="gnb">
+            <h2 class="sr-only">주메뉴</h2>
+            <ul class="sign">
+                <li>
+                    <a href="index.html" data-link="first">Home</a>
+                </li>
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li>
+                    <a href="design.html">Design</a>
+                </li>
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 메뉴 -->
+    <ul id="visual_navi">
+        <li><a href="0">Poster</a></li>
+        <li><a href="3">Infographic</a></li>
+        <li><a href="4">Cover design</a></li>
+        <li><a href="7">Typographic design</a></li>
+        <li><a href="9">Editorial design</a></li>
+    </ul>
+    <section id="visual">
+        <h2 class="blind">포트폴리오 리스트</h2>
+        <!-- 배경 효과 -->
+        <div class="univers"></div>
+        <div class="visual_index">
+            <h2 class="shimmer">Visual Design</h2>
+            <div id="portF">
+                <!-- 포폴1 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list1_1.jpg">Festival Poster Design</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list1.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Jinju Namgang Yudeng Festival<br>
+                        <button type="button" class="open_btn"data-href="#modal1" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴2 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list2_1.jpg">Poster for Exhibition</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list2.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        DILOGUE in the Dark<br>
+                        <button type="button" class="open_btn"data-href="#modal2" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴3 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list3_1.jpg">Advertisement Poster Design</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list3.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Smoothie King<br>
+                        <button type="button" class="open_btn"data-href="#modal3" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴4 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list4_1.jpg">Infographic</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list4.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Universal Studios<br>
+                        <button type="button" class="open_btn"data-href="#modal4" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴5 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list5_1.jpg">Cover Design1</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list5.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Twice Album<br>
+                        <button type="button" class="open_btn"data-href="#modal5" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴6 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list6_1.jpg">Cover Design2</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list6.png" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Series Book<br>
+                        <button type="button" class="open_btn"data-href="#modal6" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴7 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list7_1.jpg">Cover Design3</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list7.png" alt="">Book Cover</strong>
+                    <p></p>
+                    <em>
+                        Book Cover<br>
+                        <button type="button" class="open_btn"data-href="#modal7" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴8 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list8_1.jpg">Typographic Design1</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list8.png" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Drama 'Mr. Sunshie' OST '소리'<br>
+                        <button type="button" class="open_btn"data-href="#modal8" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴9 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list9_1.jpg">Typographic Design2</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list9.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Helvetica<br>
+                        <button type="button" class="open_btn"data-href="#modal9" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+                <!-- 포폴10 -->
+                <article class="visual_list">
+                    <h3><a href="assets/images/design/visualD/visual_list10_1.jpg">Editorial Design</a></h3>
+                    <strong><img src="assets/images/design/visualD/visual_list10.jpg" alt=""></strong>
+                    <p></p>
+                    <em>
+                        Megazine Design<br>
+                        <button type="button" class="open_btn"data-href="#modal10" aria-haspopup="dialog" title="대화상자">More View</button></em>
+                </article>
+            </div>
+            <nav id="snb">
+                <h2 class="blind">이동버튼</h2>
+                <ul>
+                    <li>
+                        <button onclick="goBack()">
+                            <a href="#" class="back" role="button"></a>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!-- 모달 상세 내용: 열기 버튼 바로뒤에 위치해도 됨 -->
+        <!-- <div id="dim"></div> 스크립트로 동적 생성-->
+        <!-- 포폴01 -->
+        <div id="modal1" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="festivalP">
+                <div class="festivalPhistory">
+                    <h3 class="design_tit">FESTIVAL POSTER DESIGN</h3>
+                    <div class="poster_bg1"></div>
+                    <div class="visual_txt">
+                        <strong>HISTORY</strong>
+                        <p>진주 유등놀이의 유래는 성 밖의 지원군에게 군사신호를 보내기 위해 하늘엔 풍등을 날리고, 남강을 건너려는 왜군의 도하작전을 <br>저지하고자 강물에는 유등을 띄우는 군사전술로 활용되었다. 또한, 가족에게 안부를 전하는 통신수단으로 쓰이기도 했다. <br>이후 1593년 6월 진주성이 10만 왜군에 함락된 '계사순의(癸巳殉義)'로 인해 7만 병사와 백성들이 순국한 것을 기리면서, <br>남강에 유등을 띄우는 풍속이 전해지게 되었다.</p>
+                    </div>
+                    <div class="poster_bg2"></div>
+                </div>
+                <div class="festivalC">
+                    <figure>
+                        <img src="assets/images/design/VisualD/FestivlaP_10.jpg" alt="">
+                    </figure>
+                    <div class="visual_txt">
+                        <strong>CONCEPT</strong>
+                        <p>포스터는 유등축제라는 것을 알리기 위해 바탕은 하늘 높이 날아가는 유등 위에 화사함과 반짝이는 효과를 더했다. <br> 진주성에 유래가 있는 축제이고 진주에서 한다는 것을 알리기 위해 진주성을 전면에 배치했다. <br> 타이포 'Jinju' 와 '진주유등축제'는 유등이 하늘높이 날아가고 나서 별처럼 빛나는 느낌을 주기 위해 <br> 흰색으로 배색하였다. 그 외에 글자들은 색을 넣어 가독성을 높였다. 입장권은 진주성이 포함되어 <br>있는 것과 타이포만 있는 것으로 나타내어 포스터의 포인트만 살려냈다.</p>
+                    </div>
+                    <div class="ticket">
+                        <img src="assets/images/design/VisualD/FestivlaP_03.jpg" alt="">
+                        <img src="assets/images/design/VisualD/FestivlaP_04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="goods">
+                    <h4>FESTIVAL GOODS</h4>
+                    <div class="tumbler">
+                        <div class="goods_txt">
+                            <span>◀ tumbler</span>
+                            <p>우유병같이 생긴 텀블러이다. 텀블러 앞쪽에 <br>진주유등축제의 로고를 새겨 판매한다.</p>
+                        </div>
+                        <img src="assets/images/design/VisualD/FestivlaP_05.png" alt="">
+                    </div>
+                    <div class="candle">
+                        <div class="goods_txt">
+                            <span>candle ▶</span>
+                            <p>유등축제의 분위기를 담은 양초에 로고를 새겨 판매한다.</p>
+                        </div>
+                        <img src="assets/images/design/VisualD/FestivlaP_06.png" alt="" class="f_r">
+                    </div>
+                    <div class="notebook">
+                        <div class="goods_txt">
+                            <span>◀ notebook</span>
+                            <p>진주성 위에서 반짝반짝 빛나는 유등을 공책을 통해 다시 한번 느껴보세요.</p>
+                        </div>
+                        <img src="assets/images/design/VisualD/FestivlaP_09.png" alt="" class="f_l">
+                    </div>
+                    <div class="phoneCase">
+                        <div class="goods_txt">
+                            <span>◀ phone case</span>
+                            <p>진주유등축제의 로고가 쓰여져 있는 것과 사람들의 <br>소망이 담겨있는 글귀를 캘리그라피로 주문제작 <br>할 수 있도록 2가지의 샘플을 만들었다.</p>
+                        </div>
+                        <img src="assets/images/design/VisualD/FestivlaP_07.jpg" alt="">
+                        <img src="assets/images/design/VisualD/FestivlaP_08.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴02 -->
+        <div id="modal2" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="ExhibitionP">
+                <div class="ExhibitionP_bg"></div>
+                <h3 class="design_tit">POSTER FOR EXHIBITION</h3>
+                <div class="exHistory">
+                    <img src="assets/images/design/VisualD/ExhibitionP_logo.png" alt="" class="logo">
+                    <div class="visual_txt">
+                        <strong>History of the Dialogue in the Dark</strong>
+                        <p>1988년, 안드레아스는 '그들(장애인)'과 '우리(비장애인)' 사이에 있는 벽을 허물고자 서로 <br>소통할 수 있는 플랫폼을 만들었습니다. <br>
+                        누가 '어둠'을 살까요?, 누가 시각 장애인들을 고용할까요?</p>
+                    </div>
+                    <div>
+                        <img src="assets/images/design/VisualD/ExhibitionP_01.jpg" alt="">
+                        <img src="assets/images/design/VisualD/ExhibitionP_02.png" alt="">
+                    </div>
+                    <div class="posterContent_txt">
+                        <p>그는 시각장애인들이 100% 빛이 차단된 어둠 속의 <br>공간에서 비장애인들의 가이드 역할을 하는 교육 체험 <br>공간인 '어둠 속의 대화'(Dialogue in the Dark)'를 <br>개발했습니다. 일상 생활에서 단지 잘 보인다는 <br>이유 하나로 시각장애인들보다 우위에 있다고 느끼는 <br>비장애인들이 빛이 없는 공간에서 가이드에게 의지하는 <br>자신을 발견하며 교훈을 얻게 됩니다.
+                        </p>
+                        <p>1988년 독일 프랑크푸르트에서 안드레아스 하이네케 <br>박사(Dr. Andreas Heinecke)에 의해 시작된 어둠속의 <br>대화는 30년간 유럽, 아시아, 미국 등 전 세계 32개국 160개 <br> 지역에서 1000만명 이상의 사람들과 소통하며 <br>끊임없는 변화와 도전을 거듭해 가고 있습니다.</p>
+                    </div>
+                </div>
+                <div class="exConcept">
+                    <div>
+                        <img src="assets/images/design/VisualD/ExhibitionP_04.png" alt="">
+                        <img src="assets/images/design/VisualD/ExhibitionP_03.png" alt="">
+                    </div>
+                    <div class="visual_txt">
+                        <strong>CONCEPT</strong>
+                        <p>겉으로 보이지는 않아도 누구나 마음의 병을 비롯해 장애를 가지고 있습니다. <br>하지만 우리, 비장애인들은 겉으로 보이는 것만을 장애로 따져 그들을 <br>'장애인'이라고 합니다. 그 중, '눈이 안 보이는 사람'을 우리는 '시각장애인' <br>이라 합니다. 시각장애인은 눈이 안 보이기 때문에 눈을 제외한 감각에  의존하고, <br>앞을 걸어다닐 수 있도록 지팡이를 갖고 다니거나 안내견의 도움을  받습니다.</p>
+                        <p>그러나 이번 전시회는 우리가 '장애인'이라 불리는 그들이 100% 빛이  <br>차단된 어둠 속의 공간에서 우리(비장애인)들의 가이들 역할을 하는 교육  <br>체험 공간인 '어둠 속의 대화'입니다. '어둠 속의 대화'라는 주제에 맞게  <br>전체적으로 어두운 배경을 택하였고, 가운데는 어둠 안에서도 어둠만의 <br>빛을 찾아내어 퍼즐을 맞춰가는 듯한 표현을 하였습니다.</p>
+                    </div>
+                </div>
+                <div class="leaflet">
+                    <span>▼ leaflet</span>
+                    <img src="assets/images/design/VisualD/ExhibitionP_05.png" alt="">
+                    <img src="assets/images/design/VisualD/ExhibitionP_06.jpg" alt="">
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴03 -->
+        <div id="modal3" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="adPoster">
+                <div class="adPoster_bg1"></div>
+                <h3 class="design_tit"><span>SMOOTHIE KING</span> <br>ADVERTIISEMENT POSTER</h3>
+                <div class="adP_history">
+                    <div class="visual_txt">
+                        <strong>History of the Smoothie</strong>
+                        <p>
+                            최초의 스무디는 1973년 미국 뉴올리언즈에서 시작되었다. 칼로리는 낮고 영양학적으로 균형 잡힌 먹거리를 연구하여 <br>
+                            과일에 비타민, 미네랄, 프로틴 영양소를 첨가한 스무디를 최초로 개발하고 그 이름을 '스무디(Smoothie)' 라고 <br>칭하면서
+                            그 역사가 시작되었다.
+                        </p>
+                    </div>
+                    <div class="adPoster_bg2"></div>
+                </div>
+                <div class="adP_concept">
+                    <div class="asP_img">
+                        <img src="assets/images/design/VisualD/adP_04.jpg" alt="">
+                        <img src="assets/images/design/VisualD/adP_05.jpg" alt="">
+                    </div>
+                    <div class="visual_txt">
+                        <strong>CONCEPT</strong>
+                        <p>스무디하면 생각나는 음료 브랜드인 스무디킹의 여러 가지 메뉴들 중 2가지를 선정하여 새로운 광고 포스터 디자인을 진행하였다. </p>
+                        <p>일단, 스무디하면 '활기차고 건강한 라이프 스타일'을 추구하므로 엔젤푸드는 전체적으로 빨강색을 넣어 '활기찬' 느낌을 강조하였다. <br>
+                        또한 연한 빨강색 배경에 스무디 잔 위, 우유에 빠진 딸기와 바나나를 표현하여 한 층 더 부드럽고 달콤한 맛이라는 것을 어필하였다. <br>
+                        포스터 끝에는 일러로 그린 딸기와 바나나로 사랑스러우며 아기자기한 느낌을 표현했다.</p>
+                        <p>애플 키위 케일 스무디는 전체적으로 초록색을 넣어 '건강한' 느낌을 표현했다. <br>우유에 빠진 애플, 키위, 케일로 표현하여 비타민 C가 풍부한 케일과 상큼한 사과, 신선한 키위를 깨물었을 때의 맛을 상상하게 된다.</p>
+                    </div>
+                    <img src="assets/images/design/VisualD/asP_milk.jpg" alt="" class="milk f_r">
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴04 -->
+        <div id="modal4" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="infographic">
+                <h3 class="design_tit">INFORGRPHIC DESIGN</h3>
+                <div class="info_history">
+                    <div class="visual_txt">
+                        <strong>About Infographic</strong>
+                        <p>인포메이션 그래픽(Information Graphics) 또는 인포그래픽(Info-graphics), 뉴스 그래픽(News graphics) 은 <br>정보, 자료 또는 지식의 시각적 표현이다. 정보를 구체적, 표면적, 실용적으로 전달한다는 점에서 일반적인 그림이나 <br>사진 등과는 엄연히 구별된다. 복잡한 정보를 빠르고 명확하게 설명해야 하는 기호, 지도, 기술 문서 등에서 사용된다. <br>차트, 사실박스, 지도, 다이어그램, 흐름도, 로고, 달력, 일러스트레이션, 텔레비전 프로그램 편성표 등이 인포그래픽에 포함된다.</p>
+                    </div>
+                </div>
+                <div class="info_concept">
+                    <img src="assets/images/design/VisualD/info_poster.jpg" alt="">
+                    <div class="visual_txt">
+                        <strong>Concept</strong>
+                        <p>유니버셜 스튜디오의 랜드마크는 입구에 있는 큰 지구본과 그 위에 <br>'UNVERSAL STUDIOS'라고 써 있는 곳으로 여기저기서 사진셔터를 <br>누르는 핫플레이스이다. 기본적인 색으로는 유니버셜 스튜디오의 <br>메인색이자 지구본의 바다색과 비슷한 하늘색으로 나타내어 누구나 <br>유니버셜 스튜디오의 인포그래픽이라는 것을 알아볼 수 있을 것이다. <br>또한, 관광객 분포도를 나타내어 남녀노소 누구에게나 인기있고 <br>유니버셜 스튜디오의 지도를 만들어 어디에 무엇이 있다는 것을 보여준다. <br>가장 인기있는 어트랙션 5개를 선정하여 소개하므로써 관광객 분포도가 <br>높은 이유를 알 수 있다. 그리고 맨 위와 맨 아래의 'UNIVERSAL STUDIOS <br>HOLLYWOOD'를 삽입하여 유니버셜 스튜디오 할리우드라는 것을 나타낸다.</p>
+                    </div>
+                </div>
+                <div class="info_UniS">
+                    <div class="visual_txt">
+                        <strong>UNIVERSAL STUDIOS</strong>
+                        <p>유니버셜 스튜디오는 미국 유명영화를 주제로 구성한 테마파크로서 <br>미국 디즈니랜드에 이어 세계 2대 테마파크로 불린다. 미국의 <br>로스앤젤레스, 올랜도, 일본의 오사카, 중국의 베이징, 싱가포르의 <br>센토사 섬에 진출해 있다. 유명영화의 세트 및 특수촬영장면, 스턴트쇼 <br>등을 관람할 수 있는 일종의 놀이공원으로 스튜디오 투어, 스튜디오 센터, <br>엔터테인먼트 센터 등 3가지 코스로 구분되어 있다.</p>
+                    </div>
+                </div>
+                <div class="goods">
+                    <div class="uni_ticket">
+                        <img src="assets/images/design/VisualD/info_ticket.png" alt="">
+                        <div class="goods_txt">
+                            <span> ▲ ticket</span>
+                        </div>
+                    </div>
+                    <div class="uniform">
+                        <img src="assets/images/design/VisualD/info_clothes.jpg" alt="">
+                        <div class="goods_txt">
+                            <span> ▲ an employee uniforms <br>(short & long sleeves)</span>
+                        </div>
+                    </div>
+                    <div class="staffCard">
+                        <img src="assets/images/design/VisualD/info_staffcard.png" alt="">
+                        <div class="goods_txt">
+                            <span> ▲ a staff card</span>
+                         </div>
+                    </div>
+                    <!-- <div class="">
+                        <img src="" alt="">
+                        <div class="goods_txt">
+                            <span></span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴05 -->
+        <div id="horScroll">
+            <div id="modal5" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+                <div id="coverDesign">
+                    <div class="albumCover">
+                        <img src="assets/images/design/VisualD/albumC_01.jpg" alt="">
+                        <span>Twice</span>
+                        <h3 class="design_tit">ALBUM COVER DESIGN</h3>
+                        <div class="idol">
+                            <div class="composition album_goods1">
+                                <div class="visual_txt">
+                                    <strong>About Twice</strong>
+                                    <p>TWICE는 JYP엔터테인먼트에서 miss A 이후 <br>5년 만에 선보인, 9인조 다국적 아이돌 걸그룹이다. <br>Mnet의 서바이벌 프로그램 SIXTEEN을 통해 나연, <br>정연, 모모, 사나, 지효, 미나, 다현, 채영, 쯔위가 <br>선발되어 지금의 TWICE 멤버로 활동하고 있다. <br>그룹명인 TWICE는 눈으로 한 번, 귀로 한 번 감동을 준다는 <br>의미로 박진영이 SIXTEEN을 진행하는 동안 지은 이름이다. <br>데뷔년도부터 엄청난 기록과 폭발적인 성장세를 <br>보이면서 높은 대중성과 가장 거대한 팬덤을 갖춘 <br>현 세대 대표 걸그룹으로 자리매김했다.
+                                    </p>
+                                </div>
+                                <img src="assets/images/design/VisualD/albumC_01.png" alt="">
+                            </div>
+                            <div class="composition album_goods2">
+                                <img src="assets/images/design/VisualD/albumC_02.png" alt="">
+                                <div class="package_txt">
+                                    <span class="cd"> ▼ CD</span>
+                                    <span class="package"> ▼ album cover / 앨범커버</span>
+                                    <span class="photo"> ▲ photo card / 포토카드 </span>
+                                    <span class="word"> ▲ a wordbook / 가사집 </span>
+                                </div>
+                                <div class="visual_txt">
+                                    <strong>CONCEPT</strong>
+                                    <p>앨범과 가사집은 예쁘고 사랑스러운 20대 여성의 느낌을 살리기 위해 전체적으로 연한 빨강, 연한 자주, 연한 보라색을 사용하여 표현하였다. <br>그리고 트와이스를 좋아하는 팬들을 위해 포토카드의 앞면은 멤버들의 성숙미를 눈에 띄게 하기 위해 중간채도의 빨강을 사용하였고, <br>뒷면은 트와이스의 로고와 각 멤버들의 생일과 별자리를 나타냈다. <br>CD는 랜덤으로 멤버들의 사진을 넣어 누가 나올지에 대한 기대감을 형성하게끔 만들었다.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="album_mockup">
+                            <img src="assets/images/design/VisualD/albumC_03.jpg" alt="">
+                            <div class="package_txt">
+                                <span class="Wpage"> ▼ web page / 웹 페이지</span>
+                                <span class="Mapp"> ▼ mobile app / 모바일 앱</span>
+                            </div>
+                            <div class="inner_page">
+                                <div class="phone">
+                                    <div class="inner">
+                                    <div class="header">
+                                        <button class="button back">
+                                        <svg t="1577165392507" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5866" width="16" height="16"><path d="M20.48 542.72l240.64 250.88c20.48 15.36 46.08 15.36 66.56 0s20.48-46.08 0-66.56L153.6 552.96h829.44c20.48 0 40.96-20.48 40.96-40.96s-20.48-56.32-40.96-56.32H153.6l174.08-174.08c20.48-15.36 20.48-46.08 0-66.56H261.12L15.36 465.92c-5.12 5.12-10.24 15.36-10.24 20.48 0 5.12-5.12 10.24-5.12 15.36 0 5.12 0 10.24 5.12 15.36 5.12 10.24 5.12 20.48 15.36 25.6z" p-id="5867"></path></svg>
+                                        </button>
+                                        <h4 class="title">My Playlist</h4>
+                                        <button class="button more">
+                                        <svg t="1577165711099" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="8060" width="16" height="16"><path d="M231.08266667 509.49688889c-0.11377778 51.76888889-41.87022222 93.52533333-93.75288889 93.41155556-51.65511111-0.11377778-93.63911111-42.09777778-93.52533333-93.86666667 0-51.54133333 42.21155555-93.52533333 93.98044444-93.41155556 51.65511111 0.11377778 93.29777778 41.984 93.29777778 93.86666667z m656.49777778-93.75288889c51.76888889 0 93.86666667 41.87022222 93.86666666 93.52533333 0.11377778 51.65511111-41.87022222 93.75288889-93.63911111 93.75288889-51.88266667 0-93.75288889-41.64266667-93.75288889-93.52533333s41.64266667-93.75288889 93.52533334-93.75288889zM512.45511111 603.02222222c-51.65511111 0-93.98044445-42.43911111-93.75288889-93.75288889 0.34133333-51.76888889 42.21155555-93.52533333 93.98044445-93.52533333 51.65511111 0 93.86666667 42.21155555 93.63911111 93.75288889-0.11377778 51.65511111-42.09777778 93.52533333-93.86666667 93.52533333z" p-id="8061"></path></svg>
+                                        </button>
+                                    </div>
+                                    
+                                    <div class="cover">
+                                        <img src="assets/images/design/VisualD/albumC_play.png" alt="SAY YOU LOVE ME">
+                                    </div>
+                                    
+                                    <div class="info">
+                                        <h5 class="song">SAY YOU LOVE ME</h5>
+                                        <h6 class="artist">TWICE</h6>
+                                    </div>
+                                    
+                                    <div class="time">
+                                        <div class="bar"></div>
+                                    </div>
+                                    
+                                    <div class="control">
+                                        <button class="control-button prev">
+                                        <svg t="1577170367189" class="icon" viewBox="0 0 1194 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1743" width="40" height="40">
+                                            <path d="M420.943721 392.442767c-106.153251 66.047119-106.153251 173.139025 0 239.100812l581.45358 361.467181c106.153251 66.047119 192.253437 23.039693 192.253437-95.913388V126.888975C1194.650738 7.850562 1108.46522-34.9862 1002.397301 30.975587L420.943721 392.442767z" p-id="1744" fill="#d5e1ea" filter="url(#inset-shadow)"></path>
+                                            <path d="M0 0m127.998293 0l0 0q127.998293 0 127.998294 127.998293l0 767.98976q0 127.998293-127.998294 127.998294l0 0q-127.998293 0-127.998293-127.998294l0-767.98976q0-127.998293 127.998293-127.998293Z" p-id="1745" fill="#d5e1ea" filter="url(#inset-shadow)"></path>
+                                        </svg>
+                                        </button>
+                                        
+                                        <button class="play-button">
+                                        <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
+                                            <filter id="inset-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                                            <feComponentTransfer in=SourceAlpha>
+                                                <feFuncA type="table" tableValues="1 0" />
+                                            </feComponentTransfer>
+                                            <feGaussianBlur stdDeviation="50"/>
+                                            <feOffset dx="-5" dy="-5" result="offsetblur"/>
+                                            <feFlood flood-color="rgba(0, 0, 0, 0.2)" result="color"/>
+                                            <feComposite in2="offsetblur" operator="in"/>
+                                            <feComposite in2="SourceAlpha" operator="in" />
+                                            <feMerge>
+                                                <feMergeNode in="SourceGraphic" />
+                                                <feMergeNode />
+                                            </feMerge>
+                                            </filter>
+                                            <path d="M888.32 400.128L236.544 23.808A129.194667 129.194667 0 0 0 42.666667 135.765333v752.64a129.194667 129.194667 0 0 0 193.877333 111.786667L888.32 624.042667a129.28 129.28 0 0 0 0-223.829334z" p-id="7474" fill="#ffffff" filter="url(#inset-shadow)"></path>
+                                        </svg>
+                                        </button>
+                                        
+                                        <button class="control-button next">
+                                        <svg t="1577170367189" class="icon" viewBox="0 0 1194 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1743" width="40" height="40" transform="rotate(180)">
+                                            <path d="M420.943721 392.442767c-106.153251 66.047119-106.153251 173.139025 0 239.100812l581.45358 361.467181c106.153251 66.047119 192.253437 23.039693 192.253437-95.913388V126.888975C1194.650738 7.850562 1108.46522-34.9862 1002.397301 30.975587L420.943721 392.442767z" p-id="1744" fill="#d5e1ea" filter="url(#inset-shadow)"></path>
+                                            <path d="M0 0m127.998293 0l0 0q127.998293 0 127.998294 127.998293l0 767.98976q0 127.998293-127.998294 127.998294l0 0q-127.998293 0-127.998293-127.998294l0-767.98976q0-127.998293 127.998293-127.998293Z" p-id="1745" fill="#d5e1ea" filter="url(#inset-shadow)"></path>
+                                        </svg>
+                                        </button>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="close_btn" type="button" data-link="last">닫기</button>
+            </div>
+        </div>
+
+        <!-- 포폴06 -->
+        <div id="modal6" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="seriesBook">
+                <div class="book_main">
+                    <h3 class="design_tit">SERIES BOOK COVER DESIGN</h3>
+                    <span>a collection of essays</span>
+                    <div class="bookmark">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_01.png" alt="" class=" f_r">
+                        <span class="supplies_txt">▲ 책갈피 / bookmark</span>
+                    </div>
+                </div>
+                <article class="totalEssay1">
+                    <div class="essayH">
+                        <div class="visual_txt">
+                            <strong>What is Essay?</strong>
+                            <p>개인의 상념을 자유롭게 표현하거나 한두가지 주제를 공식적 혹은 비공식적으로 논하는 비허구적 산문 양식. <br>
+                            에세이는 통상 일기, 편지, 감상문, 기행문, 소평론 등 광범위한 산문양식을 포괄하며, <br>모든 문학형식 가운데 가장 유연하고 융통성있는 것 가운데 하나이다. <br>에세이의 종류를 에세이와 미셀러니(miscellany), 혹은 공식적 (formal) 에세이와 <br>비공식적(informal) 에세이로 나누기도 하는데, 전자는 대개 지적, 객관적, 논리적 성격이 강하며, <br>후자에는 감성적, 주관적, 개인적 특성이 두드러진다.
+                            </p>
+                        </div>
+                        <div class="bookseries_bg"></div>
+                        <div class="out_banner">
+                            <img src="assets/images/design/VisualD/seriesBookcoverD_04.png" alt=""  class="f_r">
+                            <span class="supplies_txt">배너 / banner ▶</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="totalEssay2">
+                    <div class="visual_txt">
+                        <strong>Series Book Package Design Concept</strong>
+                        <p>에세이는 읽는이의 마음을 치유하고 힐링시켜주는 목적을 갖고 있다. <br>사람들이 에세이를 찾는 이유는 현실에서 일어나는 모든 일에 지친 마음을 <br>책을 통해 치유하고 위로 받고자 함이다.</p>
+                        <p>초록색은 뇌를 안정감있게 유지해주고 피로함이 가득한 눈을 풀어주어 <br>몸을 편안하게 도와주는 작용을 한다. <br>전체적인 색상을 초록색으로 표현했고, 앞, 뒤 표지는 연한 초록색을 사용하여 <br>구매자에게 우선적으로 평화로움을 주기 위해 선택했다. <br>다음으로, 중간의 고명도의 초록색은 포인트를 줌으로서 책이 꽂혀있을 때, <br>눈에 띌수 있도록 표현했다.</p>
+                    </div>
+                </article>
+                <article class="seriesConcept">
+                    <div class="coverConcept1">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_06.jpg" alt="">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_12.jpg" alt="" class="f_r">
+                        <div class="colorC f_r">
+                            <strong>Color Chip</strong>
+                            <ul>
+                                <li class="brown p_a">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#7F501F</p>
+                                        <p><span>R 127 <br>G 80 <br>B 31</span></p>
+                                    </div>
+                                </li>
+                                <li class="orange f_r">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#F7911D</p>
+                                        <p><span>R 247 <br>G 145 <br>B 29</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="visual_txt f_r">
+                            <strong>CONCEPT</strong>
+                            <p>'에세이' 라는 장르만 같을 뿐 세 권의 책 모두 작가가 다르다. <br>세권의 책 모두 지쳐있는 사람들의 마음을 위로하고 힐링시켜주는 <br>목적으로 만들어졌다.</p>
+                            <p>'그냥 흘러넘쳐도 좋아요' 책의 표지는 중앙에 맥주를 배치하여 <br>술을 좋아하든 안 좋아하든 보든 것만으로도 속이 뻥 뚫릴만큼 <br>시원함과 맥주가 옆으로 흘러넘치도록 하여  제목처럼 <br>괜찮을 거라는 생각을 갖게 한다. 또한, 상단부에 물이 흘러넘치는 <br>듯한  효과를 넣어 편안한 기분을 나타냈다. 그리고 전체적으로 <br>주황색이 도는 색을 택하여 맥주 사진이 더 돋보이게 하였다.</p>
+                        </div>
+                    </div>
+                    <div class="coverConcept2">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_07.jpg" alt="">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_13.jpg" alt="">
+                        <div class="colorC f_r">
+                            <strong>Color Chip</strong>
+                            <ul>
+                                <li class="blue f_r  p_a">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#1B3F77</p>
+                                        <p><span>R 27 <br>G 63 <br>B 119</span></p>
+                                    </div>
+                                </li>
+                                <li class="magenta f_r">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#BD4B85</p>
+                                        <p><span>R 189 <br>G 75 <br>B 133</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="visual_txt f_r">
+                            <strong>CONCEPT</strong>
+                            <p>'나, 열심히 살고 있는데 왜 자꾸 눈물이 나는 거니?' 는 <br>눈물에 초첨을 맞추었고 배경을 하루가 끝나가는 노을을 <br>나타내어 표지만 봤을 때 사람들의 외로움, 고달픔을 표현했다. <br>그리고 손수건을 배치하여 이 책이 눈물을 닦아줄 수 있는 <br>의미를 나타내었다.</p>
+                        </div>
+                    </div>
+                    <div class="coverConcept3">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_08.jpg" alt="">
+                        <img src="assets/images/design/VisualD/seriesBookcoverD_14.jpg" alt="">
+                        <div class="colorC f_r">
+                            <strong>Color Chip</strong>
+                            <ul>
+                                <li class="skyBlue f_r  p_a">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#1A75BC</p>
+                                        <p><span>
+                                            R 26 <br>G 117 <br>B 188
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="yellow f_r">
+                                    <div class="color-box"></div>
+                                    <div class="color_chip">
+                                        <p><span class="sr-only">Hex Color</span>#F9ED31</p>
+                                        <p><span>R 249 <br>G 237 <br>B 49</span></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="visual_txt f_r">
+                            <strong>CONCEPT</strong>
+                            <p>'미안하지만, 오늘은 내 인생이 먼저에요' 는 <br>주위에서 하는 말에 따라 내 인생을 설계하다가 겪고보니 <br>제일 좋은 해결책은 '나답게' 라는 것을 깨달았다. <br>배경은 전체적으로 파랑색으로 하되 빛이 들어와 내게 <br>중심이 되게끔 하였고 중앙에 초록색 신호등을 배치해 <br>내가 먼저 라는 것을 인식시켜준다.</p>
+                        </div>
+                    </div>
+                    <div class="seriesBlast_bg"></div>
+                </article>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+        
+        <!-- 포폴07 -->
+        <div id="modal7" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="bookCover">
+                <div class="visual_txt">
+                    <strong>Story</strong>
+                    <P>크리스마스 다음날 병원에서 깨어난 앰버. 그녀는 청취율 1위 프로그램인 <커피 모닝>의 보조 진행자이다. 앰버는 눈을 뜰 수도, 말을 할 수도, <br>움직일 수도 없지만 의식과 감각은 살아 있다는 사실을 아무도 알지 못한다. 앰버는 사람들이 주고받는 대화를 통해 남편 폴과 여동생 클레어가 <br>불륜 관계임을 짐작한다. 과거 클레어의 모함으로 자신에게 커다란 배신감을 느꼈던 옛 연인 에드워드가 현재 입원 중인 병원에서 근무한다는 <br>사실도 알게 된다. 또한 크리스마스 며칠 전, <커피 모닝> 메인 진행자인 메들런이 더 이상 자신과 일하지 않겠다고 PD에게 통보한 사실도 <br>떠올린다. 앰버는 사고 당시의 기억을 되찾고자 코마 상태에서 깨어나기 위해 필사적으로 몸부림치는데.......</P>
+                </div>
+                <h3 class="design_tit">BOOK COVER DESIGN</h3>
+                <p class="sub_tit">원래 <span>내 것</span>이었던</p>
+                <div class="bookcover_bg1"></div>
+                <div class="visual_txt bookconcept">
+                    <strong>CONCEPT</strong>
+                    <p>공포/스릴러 소설로 전체적인 배경을 어둡게 넣어 공포감을 조성하게끔 디자인하였다. 그리고 그 위에 무서운 표정을 짓고 있는 여자를 배치하여 <br>원망과 슬픔이 가득한 눈빛을 보내고 있으며 손이 그 여자를 잡을 듯이 뻗고 있으나 이 책에 제목처럼 '원래 내 것이었던' 이지만 <br>내 것이 아니었던 것을 사라질 듯, 말듯한 것을 연기로 표현하고 있다.</p>
+                </div>
+                <div class="bookmockup">
+                    <div class="bookmark f_r">
+                        <img src="assets/images/design/VisualD/BookCoverD_03.png" alt="">
+                        <span class="supplies_txt">▲ 책갈피 / bookmark</span>
+                    </div>
+                    <div class="ipad">
+                        <span class="supplies_txt">▼ 아이패드 / ipad</span>
+                        <img src="assets/images/design/VisualD/BookCoverD_04.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+        
+        <!-- 포폴08 -->
+        <div id="modal8" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="typoDesign1">
+                <div class="typoAlbum">
+                    <!-- <audio autoplay>
+                        <source src="Mr_Sunshine_OST.ogg" type="audio/ogg">
+                        <source src="Mr_Sunshine_OST.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio> -->
+                    <div class="typoA_main">
+                        <h4>OST ALBUM</h4>
+                        <h3 class="design_tit">TYPOGRAPHIC DESIGN</h3>
+                        <h3 class="design_tit opacity">TYPOGRAPHIC DESIGN</h3>
+                        <div class="typoalbum_poster"></div>
+                    </div>
+                    <div class="visual_txt about_drama">
+                        <strong>ALBUM INFORMATION</strong>
+                        <p>'미스터 선샤인' 은 신미양요(1871년) 때 군함에 승선해 미국에 떨어진 한 소년이 미국 군인 신분으로 자신을 버린 조국인 조선으로 돌아와 주둔하며 <br>벌어지는 일을 그린 드라마이다. 하고 싶은 이야기를 감출 수 밖에 없어 사랑하는 사람의 말소리, 웃음소리, 이야기보다 더욱 애틋하고 그립게 <br>느껴지는 마음을 담은 노래로, 따뜻해보이나 자세히 들여다보면 굉장히 애틋한 가사를 통해 극 중 주인공들의 심정을 대변하고 있는 곡이다. <br>특히, 이 곡은 세 박자 왈츠 형식의 리듬에 물 흐르듯 흘러가는 멜로디가 더해져 따뜻한 분위기를 자아낸다. 행복한 듯 쓸쓸한 이중적인 가사가 다소 <br>표현하기 어려운 감정의 노래임에도 불구 하고 이수현의 섬세한 감정표현으로 곡의 완성도를 높였다.</p>
+                    </div>
+                    <div class="visual_txt typoA_concept f_r">
+                        <strong>CONCEPT</strong>
+                        <p>사랑하는 사람들이 더욱 애틋하고 그립게 느껴지는 <br>노래이기 때문에 배경을 노을 질 무렵의 사진을 <br>배치하여 그리움이 묻어나도록 했다. 또한, 배경에 <br>가사 몇 마디를 넣으므로서 사랑하는 사람의 소리가 <br>들려오는 듯한 착각을 불러일으키게 하였고, 제목 <br>'소리'에는 울리는 듯한 시각적 표현을 더했다. </p>
+                    </div>
+                    <div class="typoA_mockup">
+                        <img src="assets/images/design/VisualD/typoalbumD_02.png" alt="">
+                        <span class="supplies_txt mobile_app">◀ 모바일 앱 / mobile app</span>
+                        <span class="supplies_txt lp_cover">◀ LP 표지 / LP cover</span>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴09 -->
+        <div id="modal9" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="typoDesign2">
+                <div class="typoHel">
+                    <h3 class="design_tit">TYPOGRAPHIC DESIGN</h3>
+                    <div class="typoHel_bg"></div>
+                    <div class="aboutHel">
+                        <div class="visual_txt">
+                            <strong>About Helvetica</strong>
+                            <p>헬베티카 폰트는 스위스의 막스 미딩거 (Max Miedinger)가 1957년 디자인한 산세리프 글자꼴로서, 원래 이름은 뉴 하스 그로테스크(New Hass Grotesque)라고 한다. <br>헬베티카는 다른  이름으로도 불리워 지는데, 사진 식자 제조사에 따라 헬리오스(Helios), 트라이엄버레이트(Triumbi-rate), 메가론(Megaron), 클라로(Claro), <br>스위스(Swiss) 등으로 불리며 가장 대표적으로 쓰이는 이름이 스템펠 라이노타이프 회사가 제작한 헬베티카입니다. 산세리프체는 19세기부터 사용되기는 했으나 <br>20세기 들어서야 대중적으로 사용되기 시작했습니다. 특히 인기 많았던 헬베티카는 대중의 수요의 힘입어 여러 활자 제조사들이 끊임없이 응용 글자꼴을 개발해 <br>사진 식자회사에 제공했기 때문에 유니버스와 같은 통일된 활자 가족을 갖지 않고 명칭도 다양하다. 헬베티카는 상대적으로 굵은 획과 가는 획의 차이가 없고 <br>획의 굵기가 시각적으로 동일하게 조정된 산세리프체의 대표라고 할 수 있으며, 엑스하이트가 높아 시각적으로 안정되어있고, 완벽한 비례는 가독성을 높이는데 <br>결정적인 구실을 하고 있다. 가독성을 높이기 위해서는 다른 활자보다 글줄 사이를 1포인트 정도 더 띄워주는 것이 좋다.</p>
+                        </div>
+                    </div>
+                    <div class="conceptHel">
+                        <img src="assets/images/design/VisualD/typoD_01.jpg" alt="">
+                        <div>
+                            <div class="fontStyle">
+                                <h4>VANCOUVER</h4>
+                                <span>- Helvetica CE</span>
+                                <h4>HISTORY, CULTURE</h4>
+                                <span>- Helvetica LT Condensed</span>
+                                <h4>Helvetica</h4>
+                                <span>- Helvetica CE 55 Roman</span>
+                            </div>
+                            <div class="visual_txt">
+                                <strong>CONCEPT</strong>
+                                <p>벤쿠버가 캐나다의 도시라는 것을 표현하기 위해 캐나다 국기의 색을 <br>사선으로 하여 채워넣었다. 그리고 경제 활동이 주가 되는 도시라는 <br>것을 알리기 위해 현대적인 건물을 세워 빨강색으로 덮었다. 거기에 <br>'VANCOUVER' 라는 글씨는 파랑색과 흰색을 주어 빨강 <br>바탕에서의 명시성이 높다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+
+        <!-- 포폴10 -->
+        <div id="modal10" class="modal_cnt" role="dialog" aria-modal="true" aria-labelledby="tit1">
+            <div id="editDesign">
+                <div class="megazine">
+                    <div class="editD_bg1"></div>
+                    <div class="megazine_main">
+                        <img src="assets/images/design/VisualD/editD_01.png" alt="">
+                        <h3 class="design_tit">EDITORIAL DESIGN</h3>
+                    </div>
+                    <div class="about_edit">
+                        <img src="assets/images/design/VisualD/editD_02.png" alt="">
+                        <div class="visual_txt">
+                            <p class="f_r">주로 책자 형식의 인쇄물을 시각적으로 구성하여 <br>독자에게 정보를 적절히 제공하기 위한 시각디자인의 <br>한 분야이다. 편집디자인은 책의 지면을 디자인하는 <br>의미 뿐만 아니라, 독자의 독서 행위를 고려하면서 <br>글과 사진 및 일러스트레이션, 책의 구조적인 디자인, <br>인쇄와 제본 방식을 결정하는 포괄적 디자인 행위를 <br>지칭한다.</p>
+                        </div>
+                    </div>
+                    <div class="edit_concept">
+                        <div class="visual_txt">
+                            <img src="assets/images/design/VisualD/editD_03.png" alt="">
+                            <div class="f_r">
+                                <strong>CONCEPT</strong>
+                                <p>네덜란드의 대표적인 그래픽 디자이너이자 교육자인 <br>카럴 마르턴스의 인터뷰 기사를 이번 잡지에 실어 보았다. <br>그는 문자와 기하학적 도형, 형형색색의 컬러로 <br>구성하다보니 그가 만든 작품들을 비롯하여 잡지 또한 <br>한 색에만 머무르지 않고 여러가지 색들을 사용하였다.</p>
+                            </div>
+                            <img src="assets/images/design/VisualD/editD_04.png" alt="" class="f_r edit_img">
+                            <p class="workintro">그의 작품들을 뚜렷하게 보여주기 위해서는 <br>전체적으로 흰 바탕에 오른쪽 페이지와 <br>다음장 왼쪽 페이지에는 눈금선을 넣어 <br>지루함을 없애 읽는 재미가 있도록 표현하였다. <br>그리고 네덜란드의 디자이너 라는 것을 <br>보여주기 위해 네덜란드의 국기 색인 빨강, <br>흰색, 파랑으로 균형을 잡았다고 할 수 있다.</p>
+                        </div>
+                    </div>
+                    <div class="megazine_cover">
+                        <h4>MEGAZINE COVER DESIGN</h4>
+                        <div class="cover_bg"></div>
+                        <div class="wallpaper">
+                            <div class="visual_txt aboutW">
+                                <strong>About Wallpaper</strong>
+                                <p>디자이너가 사랑하는 디자인 잡지, 건축, 패션, <br>인테리어, 아트 등 우리를 감싸고 있는 <br>디자인에 대해 진중한 시각과 노련한 안목을 <br>안겨준다. 그래픽 디자인 전문지는 아니지만 <br>편집디자이너들에게도 추천 1순위. 격월간 발행. <br>www.wallpaper.com</p>
+                            </div>
+                            <div class="visual_txt concept0fW">
+                                <strong>CONCEPT of Wallpaper</strong>
+                                <p>디자이너가 사랑하는 디자인 잡지답게 표지부터 <br>이 디자이너의 작품을 배치해 놓으므로서 <br>디자이너의 유명한 작품과 디자이너에 대한 <br>키워드들을 한눈에 알아볼 수 있다. 간략한 <br>키워드들로 인해 작가에 대한 호기심과 <br>궁금증을 이끌어 낼 수 있다.</p>
+                            </div>
+                            <img src="assets/images/design/VisualD/editD_06.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="close_btn" type="button" data-link="last">닫기</button>
+        </div>
+</body>
+</html>
