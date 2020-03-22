@@ -119,8 +119,48 @@ body.overHidden{overflow: hidden;}
     background-image: url("title.svg")
 }
 
-.jiyeon{margin-left: 150px;top: 45%;}
-.portfol{top: 63%;}
+.jiyeon{margin-left: 150px;top: 40%;}
+.portfol{top: 57%;}
+
+.cls-1 {
+    fill: #0e0b26;
+    stroke:none;
+    stroke-width: 2px;
+    font-size: 220px;
+    font-family: PlayB;
+    stroke-dasharray: 1360;
+    animation-iteration-count: 1;
+    animation: csvg 3s cubic-bezier(0, 0.23, 1, .1);
+}
+
+  @keyframes csvg {
+      0% {
+          stroke: #0e0b26;
+          stroke-width: 2px;
+          opacity: 0;
+          fill: none;
+          stroke-dasharray: 0;
+      }
+      30% {
+          stroke: #0e0b26;
+          stroke-width: 2px;
+          opacity: 10;
+          fill: none;
+          /* stroke-dasharray: 1360; */
+      }
+      80% {
+          stroke: #0e0b26;
+          stroke-width: 2px;
+          fill: rgba(255, 255, 255, 0);
+      }
+      100% {
+          opacity: 10;
+          fill: #0e0b26;
+          stroke-dasharray: 1360;
+          outline: none;
+          stroke: none;
+      }
+  }
 
 /* 제목 공통 */
 .shimmer {
