@@ -273,15 +273,15 @@
 #infographic .goods .uniform img{width: 43%;float: left;}
 #infographic .goods .uniform .goods_txt{margin-top: 414px;margin-left: -407px;}
 
-#infographic .goods .staffCard{margin-top: -27px;}
-#infographic .goods .staffCard{margin-left: 300px;}
+#infographic .goods .staffCard{margin: -27px 0 0 300px;}
+#infographic .goods .staffCard .goods_txt{margin-left: 310px;}
 
 /* VisualD_05 */
 #modal5{text-align: center;background: #fff url(../images/design/VisualD/albumC_bg2.png) no-repeat center bottom fixed;overflow-y: hidden;}
 #coverDesign{position: absolute;width: 100%;left: 0;top: 0;bottom: 0;}
 #coverDesign *{float: left;}
 .albumCover{height: 100%;width: 300%;}
-.albumCover > img{position: relative;width: 1%;margin-left: 743px;margin-top: 51px;}
+.albumCover > img{position: relative;width: 2%;margin-left: 687px;margin-top: 38px;}
 .albumCover > span{display: block;font-size: 42px;color: #ed1a39;top: 50px;margin-top: 76px;line-height: 1.5;margin-left: 17px;}
 #modal5 h3{color: #ed1a39;margin-top: 143px;margin-left: -264px;}
 #modal5 .idol{position: absolute;display: block;}
@@ -576,7 +576,7 @@ margin-left: 180px;width: 14%;}
 .coverConcept3 .colorC .skyBlue .color-box{background: #1a75bc;}
 .coverConcept3 .colorC .yellow .color-box{background: #F9ED31;}
 .coverConcept3 .visual_txt{margin: -388px 33px 0 0;}
-.seriesConcept .seriesBlast_bg{margin-top: 100px;height: 600px;background: url(../images/design/VisualD/seriesBookcoverD_02.png) no-repeat center;}
+.seriesConcept .seriesBlast_bg{margin-top: 50px;height: 600px;background: url(../images/design/VisualD/seriesBookcoverD_02.png) no-repeat center;}
 
 /* VisualD_07 */
 #bookCover{margin: 50px 150px 0;}

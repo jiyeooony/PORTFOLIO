@@ -507,7 +507,7 @@ body.overHidden{overflow: hidden;}
 .modal_cnt .close_btn:hover, .modal_cnt .close_btn:focus{background: #f2d750;color: #312205;}
 
 #modal21, #modal22{position: absolute;z-index: 100;width: 65%;height: 65%;}
-#modal21 > .close_btn, #modal22 > .close_btn{top: 20%;left: 78%;}
+#modal21 > .close_btn, #modal22 > .close_btn{top: 20%;left: 77%;}
 
 .chartD, .chartP{font-family: NamuG;font-size: 24px;font-weight: 400;line-height: 1.6;color: #424242;text-align: center;margin-top: 50px;}
 .chartD h4, .chartP h4{font-family: amaR_italic;font-weight: 600;font-size: 36px;}
@@ -543,7 +543,7 @@ body.overHidden{overflow: hidden;}
     animation-name: expandBar;
     animation-iteration-count: 1;
     animation-timing-function: all;
-    animation-duration: 1s;
+    animation-duration: 10s;
 }
 
 @keyframes expandBar {
@@ -861,16 +861,16 @@ body.overHidden{overflow: hidden;}
 
 .point_view{position: relative;margin-top: 630px;margin-bottom: 80px;}
 .point_view .point_img h4, .point_view .point_img p{font-weight: 400;color: #424242;}
-.point_view .point_img h4{font-family: amaR;font-size: 36px;}
+.point_view .point_img h4{font-family: amaR;font-size: 36px;margin-right: 92px;}
 .point_view .point_img p{font-family: NamuG;font-size: 22px;}
 
-.point_view .modelPage{position: absolute;margin-left: 50px;}
+.point_view .modelPage{position: absolute;margin-left: 200px;}
 .point_view .modelPage h4, .point_view .modelPage p{text-align: left;}
 .point_view .modelPage img, .point_view .customerPage img{margin-top: 40px;}
 .point_view .modelPage img{position: absolute;display: block;}
 .point_view .modelPage p{margin-top: 400px;}
 
-.point_view .customerPage{text-align: right;margin-right: 130px;}
+.point_view .customerPage{text-align: right;margin-right: 150px;}
 .point_view .customerPage h4, .point_view .customerPage p{margin-left: 667px;text-align: center;}
 .point_view .customerPage p{margin-top: 25px;margin-left: 930px;}
 
@@ -909,5 +909,6 @@ body.overHidden{overflow: hidden;}
 .point_view .touchPage p{margin-top: 536px;}
 
 .point_view .sizePage{margin-left: 667px;text-align: center;}
+.point_view .sizePage h4{margin-left: 137px;right: 0;}
 .point_view .sizePage img{width: 28%;}
-.point_view .sizePage p{line-height: 1.6;}
+.point_view .sizePage p{line-height: 1.6;margin-left: 482px;text-align: left;}
